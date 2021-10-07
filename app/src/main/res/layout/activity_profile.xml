@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/logOutButton"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_logouticon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/midLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/attendanceButton"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:drawableEnd="@drawable/ic_attendanceicon"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:background="@drawable/custom_attendance_button"
+            android:text="@string/attendanceString" />
+
+        <Button
+            android:id="@+id/scheduleButton"
+            android:background="@drawable/custom_schedule_button"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:drawableEnd="@drawable/ic_scheduleicon"
+            android:paddingRight="20dp"
+            android:layout_width="380dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/scheduleString" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bottomLayoutText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="전자출결"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/custom_bottom_textlayout"/>
+    </LinearLayout>
+</LinearLayout>
