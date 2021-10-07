@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    tools:context=".LectureActivity">
+
+    <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9"
+        android:background="@drawable/custom_top_textlayout"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="0dp"
+            android:background="@null"
+            android:drawableStart="@drawable/ic_backicon" />
+
+        <TextView
+            android:id="@+id/bottomLayoutText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/attendanceString"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/nameOfLecture"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="30dp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mobile" />
+
+        <TextView
+            android:id="@+id/professor"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="> 교수: 박지수" />
+
+        <TextView
+            android:id="@+id/lectureAttendance"
+            android:paddingLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="> 출석: 7 직각: 0 결석: 1"
+            android:layout_marginBottom="20dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_list_of_lecture_layout">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/week1"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="1" />
+
+                        <TableLayout android:layout_width="wrap_content">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/data1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 (08월 31일)" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray2"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/week2"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="2" />
+
+                        <TableLayout android:layout_width="wrap_content">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/data2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 (08월 31일)" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/week3"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="3" />
+
+                        <TableLayout android:layout_width="wrap_content">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/data3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 (08월 31일)" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray2"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/week4"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="4" />
+
+                        <TableLayout android:layout_width="wrap_content">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/data4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 (08월 31일)" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/week5"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="5" />
+
+                        <TableLayout android:layout_width="wrap_content">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/data5"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 (08월 31일)" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/gray2"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/week6"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="6" />
+
+                        <TableLayout android:layout_width="wrap_content">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/data6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 (08월 31일)" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:id="@+id/week7"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="7" />
+
+                        <TableLayout android:layout_width="wrap_content">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/data7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 (08월 31일)" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                                <TextView
+                                    android:layout_width="110dp"
+                                    android:layout_height="match_parent"
+                                    android:text="1주 ()" />
+
+                            </TableRow>
+                        </TableLayout>
+
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -9,10 +9,10 @@
     tools:context=".LoginActivity">
 
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/topLayout"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="fill_parent"
         android:layout_weight="0.7"
         android:orientation="vertical">
 
@@ -20,18 +20,20 @@
             android:id="@+id/topBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/toprectangle"
-          />
+            android:src="@drawable/toprectangle" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/logo1"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="168dp"
             android:src="@drawable/icon" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/logoText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="150dp"
@@ -40,34 +42,62 @@
             android:textSize="40sp" />
 
         <ImageView
-            android:id="@+id/line"
+            android:id="@+id/lineHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="215dp"
             android:src="@drawable/line" />
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <LinearLayout
         android:id="@+id/botLayout"
-        android:layout_width="119dp"
-        android:layout_height="171dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.4"
         android:orientation="vertical">
 
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button" />
+        <EditText
+            android:id="@+id/studentID"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_logininput"
+            android:drawablePadding="12dp"
+            android:inputType="number"
+            android:hint="학번"
+
+            android:textColor="@color/gray1"
+            android:textSize="20sp" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
+            android:id="@+id/passwordID"
+            android:layout_gravity="center"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="12dp"
+            android:textColor="@color/gray1"
+            android:textSize="20sp"
             android:inputType="text"
-            android:text="학번" />
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_studpassword"
+            android:hint="비밀번호" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_button"
+            android:text="@string/loginButton"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 

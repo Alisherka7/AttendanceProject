@@ -8,4 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="gray">#EAEAEA</color>
+    <color name="gray1">#818181</color>
+    <color name="gray2">#E6A5A5A5</color>
+    <color name="orange1">#F8774A</color>
+    <color name="gradientAttendanceStart">#FB6A70</color>
+    <color name="gradientAttendanceEnd">#FCA384</color>
+    <color name="gradientScheduleStart">#CD53EC</color>
+    <color name="gradientScheduleEnd">#FCAF84</color>
+
+    <color name="gradientBottomLayoutStart">#FD8D78</color>
+    <color name="gradientBottomLayoutEnd">#FF92F1</color>
+
 </resources>
