@@ -68,9 +68,7 @@
             android:background="@drawable/custom_input"
             android:drawableStart="@drawable/custom_logininput"
             android:drawablePadding="12dp"
-            android:inputType="number"
             android:hint="학번"
-
             android:textColor="@color/gray1"
             android:textSize="20sp" />
 
@@ -84,7 +82,6 @@
             android:drawablePadding="12dp"
             android:textColor="@color/gray1"
             android:textSize="20sp"
-            android:inputType="text"
             android:background="@drawable/custom_input"
             android:drawableStart="@drawable/custom_studpassword"
             android:hint="비밀번호" />

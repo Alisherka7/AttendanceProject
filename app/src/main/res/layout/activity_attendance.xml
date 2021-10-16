@@ -51,82 +51,83 @@
             android:layout_height="match_parent">
 
             <LinearLayout
+                android:id="@+id/lecturesLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="vertical" >
 
-                <Button
-                    android:id="@+id/lecture1"
-                    android:layout_width="380dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/custom_lecture_buttons"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:drawableEnd="@drawable/ic_gotoicon"
-                    android:text="모바일응용" />
+<!--                <Button-->
+<!--                    android:id="@+id/lecture1"-->
+<!--                    android:layout_width="380dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/custom_lecture_buttons"-->
+<!--                    android:gravity="left|center_vertical"-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:drawableEnd="@drawable/ic_gotoicon"-->
+<!--                    android:text="모바일응용" />-->
 
-                <Button
-                    android:id="@+id/lecture2"
-                    android:layout_width="380dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/custom_lecture_buttons"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:drawableEnd="@drawable/ic_gotoicon"
-                    android:text="컴퓨터네트워크" />
+<!--                <Button-->
+<!--                    android:id="@+id/lecture2"-->
+<!--                    android:layout_width="380dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/custom_lecture_buttons"-->
+<!--                    android:gravity="left|center_vertical"-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:drawableEnd="@drawable/ic_gotoicon"-->
+<!--                    android:text="컴퓨터네트워크" />-->
 
-                <Button
-                    android:id="@+id/lecture3"
-                    android:layout_width="380dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/custom_lecture_buttons"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:drawableEnd="@drawable/ic_gotoicon"
-                    android:text="진로설계세미나" />
+<!--                <Button-->
+<!--                    android:id="@+id/lecture3"-->
+<!--                    android:layout_width="380dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/custom_lecture_buttons"-->
+<!--                    android:gravity="left|center_vertical"-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:drawableEnd="@drawable/ic_gotoicon"-->
+<!--                    android:text="진로설계세미나" />-->
 
-                <Button
-                    android:id="@+id/lecture4"
-                    android:layout_width="380dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/custom_lecture_buttons"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:drawableEnd="@drawable/ic_gotoicon"
-                    android:text="데이터베이스" />
+<!--                <Button-->
+<!--                    android:id="@+id/lecture4"-->
+<!--                    android:layout_width="380dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/custom_lecture_buttons"-->
+<!--                    android:gravity="left|center_vertical"-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:drawableEnd="@drawable/ic_gotoicon"-->
+<!--                    android:text="데이터베이스" />-->
 
-                <Button
-                    android:id="@+id/lecture5"
-                    android:layout_width="380dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/custom_lecture_buttons"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:drawableEnd="@drawable/ic_gotoicon"
-                    android:text="웹응용" />
+<!--                <Button-->
+<!--                    android:id="@+id/lecture5"-->
+<!--                    android:layout_width="380dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/custom_lecture_buttons"-->
+<!--                    android:gravity="left|center_vertical"-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:drawableEnd="@drawable/ic_gotoicon"-->
+<!--                    android:text="웹응용" />-->
 
-                <Button
-                    android:id="@+id/lecture6"
-                    android:layout_width="380dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/custom_lecture_buttons"
-                    android:gravity="left|center_vertical"
-                    android:paddingLeft="25dp"
-                    android:paddingRight="15dp"
-                    android:layout_marginTop="15dp"
-                    android:drawableEnd="@drawable/ic_gotoicon"
-                    android:text="알고리즘" />
+<!--                <Button-->
+<!--                    android:id="@+id/lecture6"-->
+<!--                    android:layout_width="380dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/custom_lecture_buttons"-->
+<!--                    android:gravity="left|center_vertical"-->
+<!--                    android:paddingLeft="25dp"-->
+<!--                    android:paddingRight="15dp"-->
+<!--                    android:layout_marginTop="15dp"-->
+<!--                    android:drawableEnd="@drawable/ic_gotoicon"-->
+<!--                    android:text="알고리즘" />-->
 
             </LinearLayout>
 
