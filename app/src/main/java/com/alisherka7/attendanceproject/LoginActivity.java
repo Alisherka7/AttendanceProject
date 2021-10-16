@@ -18,6 +18,8 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 
+import org.json.JSONObject;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -47,20 +49,20 @@ public class LoginActivity extends AppCompatActivity {
 
     private void loginUser(String stID, String stPassword) {
         RequestQueue requestQueue = Volley.newRequestQueue(LoginActivity.this);
-        String url = "http://10.0.2.2:10320/login";
+        String url = "http://big-dolphin-52.loca.lt/login";
         if(TextUtils.isEmpty(stID)){
-            Toast.makeText(this, "email cannot be null", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "학번 입력하세", Toast.LENGTH_SHORT).show();
             return;
         }
         if(TextUtils.isEmpty(stPassword)){
-            Toast.makeText(this, "password cannot be null", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "비밀번호를 입력하세", Toast.LENGTH_SHORT).show();
             return;
         }
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                System.out.println(response);
-                intentProfileActivity(response);
+                    System.out.println(response);
+                    intentProfileActivity(response);
             }
         }, new Response.ErrorListener() {
             @Override

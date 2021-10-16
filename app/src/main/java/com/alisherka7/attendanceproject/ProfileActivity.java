@@ -46,9 +46,9 @@ public class ProfileActivity extends AppCompatActivity {
         logOutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intent = new Intent(ProfileActivity.this, AttendanceActivity.class);
-//                intent.putExtra("response", response);
-//                startActivity(intent);
+                Intent intent = new Intent(ProfileActivity.this, LoginActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
