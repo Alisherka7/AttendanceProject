@@ -31,21 +31,21 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-public class AttendanceActivity extends AppCompatActivity {
+public class ProfessorLecturesActivity extends AppCompatActivity {
 
 
     Button backButton, lecture1, lectureButton;
-    String studentResponse, lectureResponse;
+    String professorResponse, lectureResponse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_attendance);
+        setContentView(R.layout.activity_professor_lectures);
         //get lectures
         Bundle bundle = getIntent().getExtras();
-        studentResponse = bundle.getString("studentResponse");
+        professorResponse = bundle.getString("professorResponse");
         lectureResponse = bundle.getString("lectureResponse");
         try {
-            addLecturesFromJson(studentResponse, lectureResponse);
+            addLecturesFromJson(professorResponse, lectureResponse);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -55,8 +55,8 @@ public class AttendanceActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AttendanceActivity.this, ProfileActivity.class);
-                intent.putExtra("studentResponse", studentResponse);
+                Intent intent = new Intent(ProfessorLecturesActivity.this, ProfessorLoginActivity.class);
+                intent.putExtra("professorResponse", professorResponse);
                 intent.putExtra("lectureResponse", lectureResponse);
                 startActivity(intent);
             }
@@ -78,7 +78,7 @@ public class AttendanceActivity extends AppCompatActivity {
 
 
         JSONObject jsonObject = new JSONObject(sData);
-        JSONArray lectureArray = jsonObject.getJSONArray("lectures");// [1,2,3]
+        JSONArray lectureArray = jsonObject.getJSONArray("lecture");// [1,2,3]
         for (int i = 0; i < lectureArray.length(); i++) {
             // Add keys and values in Map
             lectureButton = new Button(this);
@@ -96,10 +96,10 @@ public class AttendanceActivity extends AppCompatActivity {
             lectureButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(AttendanceActivity.this, LectureActivity.class);
+                    Intent intent = new Intent(ProfessorLecturesActivity.this, LessonAttendActivity.class);
                     intent.putExtra("lectureName", lectureName);
                     intent.putExtra("getLectureJsonData", dateLecture);
-                    intent.putExtra("studentResponse", studentResponse);
+                    intent.putExtra("professorResponse", professorResponse);
                     intent.putExtra("lectureResponse", lectureResponse);
                     startActivity(intent);
                 }

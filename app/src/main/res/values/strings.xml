@@ -4,4 +4,6 @@
     <string name="loginButton">Login</string>
     <string name="attendanceString">과목별 출석 현황</string>
     <string name="scheduleString">시간표</string>
+    <string name="studentLogin">학생 로그인</string>
+    <string name="professorLogin">교수 로그인 </string>
 </resources>

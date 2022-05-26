@@ -17,7 +17,7 @@ import java.util.Iterator;
 public class ProfileActivity extends AppCompatActivity {
 
     Button logOutButton, attendanceButton;
-    String response;
+    String studentResponse, lectureResponse;
     TextView textViewStudentName;
     private String StudentName = "성명";
 
@@ -32,15 +32,15 @@ public class ProfileActivity extends AppCompatActivity {
 
         // Json response
         Bundle bundle = getIntent().getExtras();
-        response = bundle.getString("response");
+        studentResponse = bundle.getString("studentResponse");
+        lectureResponse = bundle.getString("lectureResponse");
+        System.out.println(lectureResponse);
         try {
-            parseJSON(response);
+            parseJSON(studentResponse, lectureResponse);
             textViewStudentName.setText(StudentName);
         } catch (JSONException e) {
             e.printStackTrace();
         }
-
-
 
 
         logOutButton.setOnClickListener(new View.OnClickListener() {
@@ -58,14 +58,15 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(ProfileActivity.this, AttendanceActivity.class);
-                intent.putExtra("response", response);
+                intent.putExtra("studentResponse", studentResponse);
+                intent.putExtra("lectureResponse", lectureResponse);
                 startActivity(intent);
             }
         });
     }
 
-    private void parseJSON(String response) throws JSONException {
-        JSONObject jsonObject = new JSONObject(response);
+    private void parseJSON(String studentResponse, String lectureResponse) throws JSONException {
+        JSONObject jsonObject = new JSONObject(studentResponse);
         StudentName = jsonObject.getString("name");
     }
 }
